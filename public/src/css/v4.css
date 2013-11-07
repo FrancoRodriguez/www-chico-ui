@@ -12,44 +12,6 @@ a:visited {
     color: #0637B3;
 }
 
-/* Headings */
-[role=main] h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-[role=main] h1 small {
-    color:#ccc;
-}
-
-[role=main] h3 {
-    font-size: 22px;
-    margin: 35px 0 10px;
-}
-
-[role=main] h4 {
-    font-size: 18px;
-    margin: 30px 0 15px;
-}
-
-[role=main] h5 {
-    font-size: 14px;
-}
-
-[role=main] nav .ch-rightcolumn h4 {
-    margin-bottom: 10px;
-}
-
-[role=main] p {
-    margin-bottom: 0.4em;
-}
-
-[role=main] nav .rightcolumn li {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
 
 /*
 *   Header
@@ -78,21 +40,12 @@ header .logo .version {
 
 /* Main navigation */
 header nav {
-    margin-top: 15px;
+    margin-top: 22px;
     text-align: right;
 }
 
 header nav ul {
     display: inline-block;
-}
-
-header nav form {
-    display: inline;
-    padding-left: 5px;
-}
-
-header nav label {
-    display: none;
 }
 
 header nav li {
@@ -104,22 +57,6 @@ header nav li {
 header nav li:last-child {
     border-right: none;
     padding-right: 0;
-}
-
-/* TODO: fix transition */
-#q {
-    border-radius: 20px;
-    -webkit-transition: width 0.25s;
-    -moz-transition: width 0.25s;
-    -ms-transition: width 0.25s;
-    -o-transition: width 0.25s;
-    transition: width 0.25s;
-    width:125px;
-    padding-left:5px;
-}
-
-#q:focus {
-    width: 200px;
 }
 
 
@@ -199,18 +136,48 @@ header nav li:last-child {
 
 #additional {
     overflow: hidden;
-    margin-top: 360px;
+    margin-top: 380px;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    border-bottom: 1px dashed #ccc;
 }
 
-#additional h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    margin-top: 10px;
+
+/*
+UI Components
+*/
+
+.ch-box-lite {
+    position: relative;
 }
 
-#additional img {
-    float: left;
-    margin-right: 10px;
+/**
+ * Carousel demo
+ */
+.myCarousel .ch-carousel-item {
+    width: 200px;
+    height: 200px;
+}
+
+.myCarousel img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Icons demo */
+.showroomIcons {
+    overflow: hidden;
+}
+
+.showroomIcons li{
+    float:left;
+    width: 33%;
+    line-height: 2em;
+}
+
+.ch-loading-small {
+    display: block;
+    margin:0 auto;
 }
 
 /*

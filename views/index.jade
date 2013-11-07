@@ -10,19 +10,19 @@ section#home-description
 section#additional
     article.ch-g2-5
         .ch-leftcolumn
-            h3 UI Components
-            p In the documentation you'll find how to create, administrate or extend any component.
+            h2 API Documentation
+            p Here you'll find how to create, administrate or extend any component.
             a(href="http://chico.mercadolibre.com") Read API Documentation
 
     article.ch-g2-5
         .ch-centercolumn
-            h3 Chico Mesh
+            h2 Mesh
             p Provides a set of CSS columns that makes the laying out of a website easy and fast.
             a(href="/mesh") Check it out!
 
     article.ch-g1-5
         .ch-rightcolumn
-            h3 Also
+            h2 Also
             ul
                 li
                     a(href="https://github.com/mercadolibre/chico/issues") Issue tracker
@@ -31,5 +31,1065 @@ section#additional
                 li
                     a(href="license") License
 
+h2 UI Components
+
+.ch-box-lite#headers
+        h1 Header 1
+        h2 Header 2
+        h3 Header 3
+        h4 Header 4
+        h5 Header 5
+        h6 Header 6
+.ch-box-lite
+    h3 Paragraphs
+    p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec ipsum tellus, quis ultricies nunc. Vestibulum ornare porta nunc, vitae tincidunt massa ornare vel. Nam ut felis odio.
+    p
+        | Nam porta nunc vitae orci sollicitudin a ullamcorper purus dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed libero eget purus dictum fringilla non sed lectus. Etiam commodo quam in neque vehicula dapibus.
+    p
+        | Phasellus ornare lacus ut purus elementum eget sodales dui placerat. Nunc ultrices porttitor mi, eu varius quam tristique in. Etiam tempor porta sodales.
+    p Phasellus dui nisi, hendrerit a porta vel, tempus bibendum mauris.
+    p
+        | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus bibendum consectetur dignissim.
+.ch-box-lite
+    h3#links Links
+    p
+        a(href='http://www.mercadolibre.com') MercadoLibre
+    p
+        a(href='http://www.mercadopago.com') MercadoPago
+    p
+        a(href='http://www.mercadoshops.com') MercadoShops
+    p
+        a(href='http://www.mercadoclics.com') MercadoClics
+.ch-box-lite.ch-clearfix
+    h3#list Lists
+    .ch-g1-4
+        h4 Unstyled
+        ul
+            li
+                a(href='http://www.mercadolibre.com') MercadoLibre
+            li
+                a(href='http://www.mercadopago.com') MercadoPago
+            li
+                a(href='http://www.mercadoshops.com') MercadoShops
+            li
+                a(href='http://www.mercadoclics.com') MercadoClics
+    .ch-g1-4
+        h4 Unordered
+        ul.ch-list
+            li
+                a(href='http://www.mercadolibre.com') MercadoLibre
+            li
+                a(href='http://www.mercadopago.com') MercadoPago
+            li
+                a(href='http://www.mercadoshops.com') MercadoShops
+            li
+                a(href='http://www.mercadoclics.com') MercadoClics
+    .ch-g1-4
+        h4 Ordered
+        ol.ch-list
+            li
+                a(href='http://www.mercadolibre.com') MercadoLibre
+            li
+                a(href='http://www.mercadopago.com') MercadoPago
+            li
+                a(href='http://www.mercadoshops.com') MercadoShops
+            li
+                a(href='http://www.mercadoclics.com') MercadoClics
+    .ch-g1-4
+        h4 Description
+        dl.ch-list
+            dt MercadoLibre
+            dd Donde compras y vendes de todo!
+            dt MercadoPago
+            dd La forma más simple de recibir pagos!
+    .ch-clearfix
+#boxes
+    .ch-box-container
+        h3 Container Box
+        p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing. Donec sit amet purus in sapien luctus sodales adipiscing.
+    .ch-box-lite
+        h3 Box Lite
+        p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing. Donec sit amet purus in sapien luctus sodales adipiscing.
+    .ch-box
+        h3 Box
+        p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing. Donec sit amet purus in sapien luctus sodales adipiscing.
+    .ch-box-error
+        h3 Box Error
+        p Oops, something wrong happened.
+    .ch-box-help
+        h3 Box Help
+        p Do you need any help?
+    .ch-box-info
+        h3 Box Info
+        p Here's more information
+    .ch-box-warn
+        h3 Box Warn
+        p Warning! something might be wrong
+    .ch-box-ok
+        h3 Box Ok
+        p Everything is great!
+.ch-box-lite
+    h3#message-boxes Messages boxes (with icons)
+    .ch-box-icon
+        i.ch-icon-truck
+        p This is a big warning message, be careful!
+    .ch-box-icon
+        i.ch-icon-info-sign
+        h2 Warning!
+        p This is a big warning message, be careful!
+    .ch-box-icon.ch-box-error
+        i.ch-icon-remove-sign
+        | Oops, something wrong happened
+    .ch-box-icon.ch-box-help
+        i.ch-icon-help-sign
+        | Do you need any help?
+    .ch-box-icon.ch-box-info
+        i.ch-icon-info-sign
+        | Here's more information
+    .ch-box-icon.ch-box-warn
+        i.ch-icon-warning-sign
+        | Warning! something might be wrong
+    .ch-box-icon.ch-box-ok
+        i.ch-icon-ok-sign
+        | Everything is great!
+h3#wizard.ch-box-container Wizard
+.ch-wizard
+    ol.ch-wizard-breadcrumb.ch-steps-four
+        li
+            a(href='#1') Step 1
+        li
+            a(href='#2') Step 2
+        li.ch-wizard-current Step 3
+        li.ch-wizard-step Step 4
+    .ch-box-container
+        h2 Caption heading
+        p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet purus in sapien luctus sodales. Curabitur dui velit, cursus in sagittis aliquam, dictum at neque. Ut gravida scelerisque lorem non pulvinar. Pellentesque et urna vitae nisl porta imperdiet sed nec ipsum. Sed non sem velit. Cras id consectetur tellus.
+    .ch-actions
+        button.ch-btn Primary Action
+        a(href='#') Secondary Action
+.ch-box-lite
+    h3#spinner Spinner control
+    span.ch-loading-small
+    span.ch-loading
+    span.ch-loading-big
+.ch-box-lite.ch-clearfix
+    .ch-g1-2
+        .ch-leftcolumn
+            h3#buttons Buttons
+            p
+                a.ch-btn.ch-btn-big(href='') Link button
+            p
+                input.ch-btn.ch-btn-big(type='button', value='Big button')
+            p
+                input.ch-btn(type='button', value='Default button')
+            p
+                input.ch-btn.ch-btn-small(type='button', value='Small button')
+            p
+                input.ch-btn-skin.ch-btn-small(type='button', value='Skin button')
+    .ch-g1-2
+        .ch-rightcolumn
+            h3 Disabled Buttons
+            p
+                a.ch-btn.ch-btn-big.ch-btn-disabled(href='') Link button disabled
+            p
+                input.ch-btn.ch-btn-big.ch-btn-disabled(type='button', value='Big button disabled')
+            p
+                input.ch-btn.ch-btn-disabled(type='button', value='Default button disabled')
+            p
+                input.ch-btn.ch-btn-small.ch-btn-disabled(type='button', value='Small button disabled')
+            p
+                input.ch-btn-skin.ch-btn-small.ch-btn-disabled(type='button', value='Skin button disabled')
+    .ch-clearfix
+.ch-box-lite
+    h3#autocomplete Autocomplete
+    form.ch-form(method='get', action='http://www.mercadolibre.com.ar/jm/search')
+        .ch-form-row
+            label(for='product') Find a product:
+            input#product.autocomplete(type='text', name='as_word', placeholder='iphone 5')
+            p.ch-form-hint This is working with the MercadoLibre API
+        p.ch-form-actions
+            input.ch-btn(type='submit', name='autocompleteSubmit')
+.ch-box-lite
+    h3#pagination Pagination
+    ul.ch-pagination
+        li
+            a(type='prev', href='#') Previous
+        li
+            a(href='#') 1
+        li
+            a(href='#') 2
+        li.ch-pagination-current
+            a(href='#') 3
+        li
+            a(href='#') 4
+        li
+            a(href='#') 5
+        li
+            a(type='next', href='#') Next
+.ch-box-lite#tables
+    table.ch-datagrid(summary='Listado de cobros en MercadoPago')
+        caption Table
+        thead
+            tr
+                th(scope='col') Data
+                th(scope='col') Operation
+                th(scope='col') Seller
+                th(scope='col') Description
+                th(scope='col') Price
+                th(scope='col') Status
+                th(scope='col') Actions
+        tbody
+            tr
+                td 02/04/2011
+                td
+                    a(href='#') Sale
+                td
+                    a(href='#') mail@example.com
+                td Shopping at MercadoLibre
+                td
+                    span.value $1200,30
+                td Pending
+                td
+                    | select
+            tr
+                td 02/04/2011
+                td
+                    a(href='#') Purchase
+                td
+                    a(href='#') mail@example.com
+                td Shopping at MercadoLibre
+                td
+                    span.value $1200,30
+                td Pending
+                td select
+            tr
+                td 02/04/2011
+                td
+                    a(href='#') Sale
+                td
+                    a(href='#') mail@example.com
+                td Shopping at MercadoLibre
+                td
+                    span.value $1200,30
+                td Pending
+                td select
+            tr
+                td 02/04/2011
+                td
+                    a(href='#') Sale
+                td
+                    a(href='#') mail@example.com
+                td Shopping at MercadoLibre
+                td
+                    span.value $1200,30
+                td Pending
+                td select
+    table.ch-datagrid-controls(summary='Listado de cobros en MercadoPago')
+        caption Table
+        thead
+            tr
+                th(scope='col')
+                    input(type='checkbox', name='mycheckall')
+                th(scope='col') Data
+                th(scope='col') Operation
+                th(scope='col') Seller
+                th(scope='col') Description
+                th.ch-datagrid-selected(scope='col')
+                    | Price
+                    i.ch-datagrid-desc
+                th(scope='col') Status
+                th(scope='col') Actions
+        tbody
+            tr
+                td(scope='row')
+                    input(type='checkbox', name='mycheck')
+                td 02/04/2011
+                td
+                    a(href='#') Sale
+                td
+                    a(href='#') mail@example.com
+                td Shopping at MercadoLibre
+                td
+                    span.value $1200,30
+                td Pending
+                td
+                    | select
+            tr.ch-datagrid-selected
+                td(scope='row')
+                    input(type='checkbox', name='mycheck', checked='checked')
+                td 02/04/2011
+                td
+                    a(href='#') Purchase
+                td
+                    a(href='#') mail@example.com
+                td Shopping at MercadoLibre
+                td
+                    span.value $1200,30
+                td Pending
+                td select
+            tr
+                td(scope='row')
+                    input(type='checkbox', name='mycheck')
+                td 02/04/2011
+                td
+                    a(href='#') Sale
+                td
+                    a(href='#') mail@example.com
+                td Shopping at MercadoLibre
+                td
+                    span.value $1200,30
+                td Pending
+                td select
+            tr
+                td(scope='row')
+                    input(type='checkbox', name='mycheck')
+                td 02/04/2011
+                td
+                    a(href='#') Sale
+                td
+                    a(href='#') mail@example.com
+                td Shopping at MercadoLibre
+                td
+                    span.value $1200,30
+                td Pending
+                td select
+.ch-box-lite
+    h3#expandable Expandable
+    h4.YOUR_SELECTOR_expandable Lorem ipsum dolor sit amet.
+    #container1
+        #content
+            h2.test Lorem
+            p
+                | ipsum dolor sit amet, consectetur adipiscing elit. Duis nec ipsum tellus, quis ultricies nunc. Vestibulum ornare porta nunc, vitae tincidunt massa ornare vel. Nam ut felis odio.
+    h4.YOUR_SELECTOR_expandable2 Lorem ipsum dolor sit amet.
+    div
+        #container
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec ipsum tellus, quis ultricies nunc. Vestibulum ornare porta nunc, vitae tincidunt massa ornare vel. Nam ut felis odio.
+    h4.YOUR_SELECTOR_expandable3 Lorem ipsum dolor sit amet.
+    #container-ajax
+.ch-box-container
+    h3#menu Menu
+    ul.YOUR_SELECTOR_Menu
+        li
+            span Collapsible
+            ul
+                li
+                    a(href='#') Link 1
+                li
+                    a(href='#') Link 2
+                li
+                    a(href='#') Link 3
+        li
+            span Collapsible
+            ul
+                li
+                    a(href='#') Link 1
+                li
+                    a(href='#') Link 2
+                li
+                    a(href='#') Link 3
+        li
+            a(href='#') Link
+        li
+            span Collapsible
+            ul
+                li
+                    a(href='#') Link 1
+                li
+                    a(href='#') Link 2
+                li
+                    a(href='#') Link 3
+        li
+            span Collapsible
+            ul
+                li
+                    a(href='#') Link 1
+                li
+                    a(href='#') Link 2
+                li
+                    a(href='#') Link 3
+.ch-box-lite
+    h3#dropdown Dropdown
+    h4.myDropdown Default
+    menu.ch-hide(label='Links')
+        li
+            a(href='http://www.mercadolibre.com') MercadoLibre
+        li
+            a(href='http://www.mercadopago.com') MercadoPago
+        li
+            a(href='http://www.mercadoshops.com') MercadoShops
+        li
+            a(href='http://www.mercadoclics.com') MercadoClics
+    i.ch-icon-heart.myDropdownNav
+    ul.ch-hide
+        li
+            img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='50')
+            img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='50')
+            img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='50')
+        li
+            img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='50')
+            img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='50')
+            img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='50')
+        li
+            img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='50')
+            img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='50')
+            img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='50')
+    p.myDropdownSkin With skin
+    menu.ch-hide(label='Links')
+        li
+            a(href='http://www.mercadolibre.com') MercadoLibre
+        li
+            a(href='http://www.mercadopago.com') MercadoPago
+        li
+            a(href='http://www.mercadoshops.com') MercadoShops
+        li
+            a(href='http://www.mercadoclics.com') MercadoClics
+.ch-box-lite.ch-clearfix
+    h3#tooltip Tooltip
+    .ch-g1-2
+        .ch-box-container
+            h4 Bottom
+            img#default(alt='This is a tooltip', src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+            img#ctcb(alt='This is a tooltip', src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+            img#rtrb(alt='This is a tooltip', src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+        .ch-box-container
+            h4 Top
+            img#lblt(alt='This is a tooltip', src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+            img#cbct(alt='This is a tooltip', src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+            img#rbrt(alt='This is a tooltip', src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+    .ch-g1-2
+        .ch-box-container
+            h4 Right
+            img#ltrt(alt='This is a tooltip', src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+            img#lmrm(alt='This is a tooltip', src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+            img#lbrb(alt='This is a tooltip', src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+        .ch-box-container
+            h4 Left
+            img#rtlt(alt='This is a tooltip', src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+            img#rmlm(alt='This is a tooltip', src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+            img#rblb(alt='This is a tooltip', src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+    .ch-clearfix
+.ch-box-lite
+    h3#layer Layer
+    img#layer1(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='150')
+#bubble-box.ch-box-lite
+    h3#bubble Validation Bubble
+    img#bubble1(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png', width='30')
+.ch-box-lite
+    h3 Modal
+    button#modal1.ch-btn.ch-btn-small Show
+    #invisible-content.ch-hide
+        h1 Caption heading
+        p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet purus in sapien luctus sodales. Curabitur dui velit, cursus in sagittis aliquam, dictum at neque. Ut gravida scelerisque lorem non pulvinar. Pellentesque et urna vitae nisl porta imperdiet sed nec ipsum. Sed non sem velit. Cras id consectetur tellus.
+        .ch-actions
+            button.ch-btn Primary Action
+            a(href='#') Secondary Action
+.ch-box-lite
+    h3 Transition window
+    form(action='/src/assets/ajax.html')
+        input#transition.ch-btn.ch-btn-small(type='submit', value='Exeute it!')
+.ch-box-lite.ch-clearfix
+    h3 Zoom
+    a.zoom(href='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/html5-logo-big.png', target='_blank')
+        img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/html5-logo-medium.png', alt='HTML5')
+.ch-box-lite
+    h3#carousel Carousel
+    .myCarousel.ch-carousel
+        ul
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+            li
+                img(src='http://static.mlstatic.com/org-img/ch/ui/1.0.0/static/ninja.png')
+.ch-box-container
+    h3#tabs Tabs
+    .YOUR_SELECTOR_Tabs.ch-tabs
+        ul.ch-tabs-triggers
+            li
+                a.ch-tab(href='#tab1-a') Tab1
+            li
+                a.ch-tab(href='#tab2-a') Tab2
+            li
+                a.ch-tab(href='#tab3-a') Tab3
+            li
+                a.ch-tab(href='/src/assets/ajax.html#ajax-a') Tab4
+        .ch-box-lite
+            #tab1-a
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet purus in sapien luctus sodales. Curabitur dui velit, cursus in sagittis aliquam, dictum at neque. Ut gravida scelerisque lorem non pulvinar. Pellentesque et urna vitae nisl porta imperdiet sed nec ipsum. Sed non sem velit. Cras id consectetur tellus.
+            #tab2-a.ch-hide
+                p
+                    | Vestibulum posuere purus non enim pharetra vel vulputate eros hendrerit. Ut pulvinar placerat risus quis interdum. Mauris eget tempus risus. Aenean accumsan dolor in lorem elementum ac tincidunt urna rutrum. Sed sit amet nunc velit, vitae tincidunt ipsum. Fusce mattis elementum justo, et lacinia odio pharetra a.
+            #tab3-a.ch-hide
+                p
+                    | Sed sit amet nunc velit, vitae tincidunt ipsum. Fusce mattis elementum justo, et lacinia odio pharetra a. Donec egestas imperdiet eros a interdum. Suspendisse sodales, ligula vitae pulvinar aliquam, elit justo pretium urna, ut hendrerit arcu dolor vitae ipsum.
+.ch-box-lite
+    h3#badges Badges
+    i.ch-badge.ch-icon-camera
+    i.ch-badge-skin.ch-icon-map-marker
+.ch-box-lite.clearfix
+    h3#icons Icons
+    i.ch-icon-camera.ch-icon-64(title='64x64')
+    i.ch-icon-camera.ch-icon-32(title='32x32')
+    i.ch-icon-camera.ch-icon-24(title='24x24')
+    i.ch-icon-camera(title='16x16')
+    ul.showroomIcons
+        li
+            i.ch-icon-search
+            | ch-icon-search
+        li
+            i.ch-icon-heart
+            | ch-icon-heart
+        li
+            i.ch-icon-star
+            | ch-icon-star
+        li
+            i.ch-icon-star-empty
+            | ch-icon-star-empty
+        li
+            i.ch-icon-user
+            | ch-icon-user
+        li
+            i.ch-icon-th-large
+            | ch-icon-th-large
+        li
+            i.ch-icon-th
+            | ch-icon-th
+        li
+            i.ch-icon-th-list
+            | ch-icon-user
+        li
+            i.ch-icon-ok
+            | ch-icon-ok
+        li
+            i.ch-icon-remove
+            | ch-icon-remove
+        li
+            i.ch-icon-zoom-in
+            | ch-icon-zoom-in
+        li
+            i.ch-icon-zoom-out
+            | ch-icon-zoom-out
+        li
+            i.ch-icon-cog
+            | ch-icon-cog
+        li
+            i.ch-icon-trash
+            | ch-icon-trash
+        li
+            i.ch-icon-time
+            | ch-icon-time
+        li
+            i.ch-icon-repeat
+            | ch-icon-repeat
+        li
+            i.ch-icon-refresh
+            | ch-icon-refresh
+        li
+            i.ch-icon-lock
+            | ch-icon-lock
+        li
+            i.ch-icon-print
+            | ch-icon-print
+        li
+            i.ch-icon-camera
+            | ch-icon-camera
+        li
+            i.ch-icon-pencil
+            | ch-icon-pencil
+        li
+            i.ch-icon-map-marker
+            | ch-icon-map-marker
+        li
+            i.ch-icon-move
+            | ch-icon-move
+        li
+            i.ch-icon-chevron-left
+            | ch-icon-chevron-left
+        li
+            i.ch-icon-chevron-right
+            | ch-icon-chevron-right
+        li
+            i.ch-icon-plus-sign
+            | ch-icon-plus-sign
+        li
+            i.ch-icon-minus-sign
+            | ch-icon-minus-sign
+        li
+            i.ch-icon-remove-sign
+            | ch-icon-remove-sign
+        li
+            i.ch-icon-ok-sign
+            | ch-icon-ok-sign
+        li
+            i.ch-icon-help-sign
+            | ch-icon-help-sign
+        li
+            i.ch-icon-info-sign
+            | ch-icon-info-sign
+        li
+            i.ch-icon-ban-circle
+            | ch-icon-ban-circle
+        li
+            i.ch-icon-arrow-left
+            | ch-icon-arrow-left
+        li
+            i.ch-icon-arrow-right
+            | ch-icon-arrow-right
+        li
+            i.ch-icon-arrow-up
+            | ch-icon-arrow-up
+        li
+            i.ch-icon-arrow-down
+            | ch-icon-arrow-down
+        li
+            i.ch-icon-plus
+            | ch-icon-plus
+        li
+            i.ch-icon-minus
+            | ch-icon-minus
+        li
+            i.ch-icon-exclamation-sign
+            | ch-icon-exclamation-sign
+        li
+            i.ch-icon-warning-sign
+            | ch-icon-warning-sign
+        li
+            i.ch-icon-calendar
+            | ch-icon-calendar
+        li
+            i.ch-icon-comment
+            | ch-icon-comment
+        li
+            i.ch-icon-chevron-up
+            | ch-icon-chevron-up
+        li
+            i.ch-icon-chevron-down
+            | ch-icon-chevron-down
+        li
+            i.ch-icon-key
+            | ch-icon-key
+        li
+            i.ch-icon-comments
+            | ch-icon-comments
+        li
+            i.ch-icon-unlock
+            | ch-icon-unlock
+        li
+            i.ch-icon-wrench
+            | ch-icon-wrench
+        li
+            i.ch-icon-group
+            | ch-icon-group
+        li
+            i.ch-icon-copy
+            | ch-icon-copy
+        li
+            i.ch-icon-paper-clip
+            | ch-icon-paper-clip
+        li
+            i.ch-icon-reorder
+            | ch-icon-reorder
+        li
+            i.ch-icon-truck
+            | ch-icon-truck
+        li
+            i.ch-icon-caret-down
+            | ch-icon-caret-down
+        li
+            i.ch-icon-caret-up
+            | ch-icon-caret-up
+        li
+            i.ch-icon-caret-left
+            | ch-icon-caret-left
+        li
+            i.ch-icon-caret-right
+            | ch-icon-caret-right
+        li
+            i.ch-icon-sort
+            | ch-icon-sort
+        li
+            i.ch-icon-sort-down
+            | ch-icon-sort-down
+        li
+            i.ch-icon-sort-down
+            | ch-icon-sort-up
+        li
+            i.ch-icon-envelope-alt
+            | ch-icon-envelope-alt
+        li
+            i.ch-icon-undo
+            | ch-icon-undo
+        li
+            i.ch-icon-comment-alt
+            | ch-icon-comment-alt
+        li
+            i.ch-icon-comments-alt
+            | ch-icon-comments-alt
+        li
+            i.ch-icon-phone
+            | ch-icon-phone
+.ch-box-lite
+    h3#calendar Calendar
+    .YOUR_SELECTOR_calendar
+.ch-box-lite
+    h3#datepicker Date Picker
+    form.YOUR_SELECTOR_FormDatepicker.ch-form(action='/src/assets/ajax.html')
+        p.ch-form-row
+            label(for='val_date')
+                | Date:
+            input#val_date.myDatepicker(type='date', placeholder='DD/MM/YYYY')
+.ch-box-lite
+    h3#countdown Countdown
+    form.YOUR_SELECTOR_Formcountdown.ch-form(action='/src/assets/ajax.html')
+        p.ch-form-row
+            label(for='val_date') Text:
+            textarea#text_cd.myCountdown(cols='35', rows='4')
+.ch-box-lite
+    h3#form Forms and Validations
+    form.ch-form.myForm(action='/src/assets/ajax.html', method='GET')
+        fieldset
+            legend Inputs
+            .ch-form-row
+                label(for='input_ico')
+                    | Icon:
+                input#input_ico(type='text', name='input_ico', size='30', placeholder='')
+                i.ch-form-icon.ch-icon-help-sign
+            .ch-form-row
+                label(for='input_ico_inside')
+                    | Icon inside:
+                input#input_ico_inside.ch-form-icon-input(type='text', name='input_ico', size='30', placeholder='')
+                i.ch-form-icon-inner.ch-icon-help-sign
+            .ch-form-row
+                label(for='input_button')
+                    | Category:
+                input#input_button(type='text', name='input_button', size='30', placeholder='')
+                input.ch-btn.ch-btn-small.ch-btn-skin(type='button', name='add_category', value='Add')
+                span.ch-form-hint Add your category
+            .ch-form-row.ch-form-required
+                label(for='price')
+                    | Price:
+                    em *
+                input#price(type='text', name='price', required='required', placeholder='1349.43')
+                span.ch-form-hint Numbers and dot symbol
+            .ch-form-row.ch-form-required
+                label(for='email')
+                    | E-mail:
+                    em *
+                input#email(type='email', name='email', required='required', size='35', placeholder='juan.perez@chico-ui.com.ar')
+                span.ch-form-hint It will be your login name
+            .ch-form-row
+                label(for='email2')
+                    | E-mail:
+                input#email2(type='email', name='email2', required='required', size='35', placeholder='juan.perez@chico-ui.com.ar')
+                input#news.ch-form-checkbox-inline(type='checkbox', name='news', checked='checked')
+                label.ch-label-inline(for='news')
+                    | Accept to receive weekly news
+            .ch-form-row
+                label(for='url')
+                    | URL:
+                input#url(type='url', name='url', size='60', placeholder='http://www.chico-ui.com.ar')
+            .ch-form-row
+                label(for='number')
+                    | Numeric field:
+                input#number(type='number', name='number', min='18', max='99', placeholder='30')
+            .ch-form-row.ch-form-required
+                label(for='range')
+                    | Numeric range:
+                    em *
+                input#range(type='range', name='range', min='1', max='20')
+                span.ch-form-hint Between 8 to 10
+            .ch-form-row.ch-form-required.ch-form-disabled
+                label(for='required_disabled')
+                    | Required disabled:
+                    em *
+                input#required_disabled(type='text', required='required', disabled='disabled')
+                span.ch-form-hint It's a unknown use case
+            .ch-form-row
+                label(for='characters')
+                    | Characters:
+                input#characters(type='text')
+            .ch-form-row
+                label(for='custom')
+                    | Custom:
+                input#custom(type='text', placeholder='12', size='2')
+            .ch-form-row
+                label(for='readonly')
+                    | Readonly:
+                input#readonly(type='text', readonly='readonly', value='its a readonly value')
+            .ch-form-row
+                label(for='double')
+                    | It's a input text with double line:
+                input#double(type='text')
+        fieldset
+            legend Selects
+            .ch-form-row
+                label(for='select1')
+                    | Common field:
+                select#select1
+                    option(value='-1') Select one...
+                    option(value='1') Option 1
+                    option(value='2') Option 2
+                    option(value='3') Option 3
+                    option(value='4') Option 4
+            .ch-form-row.ch-form-required
+                label(for='select2')
+                    | Required:
+                    em *
+                select#select2(required='required', pattern='[^-1]')
+                    option(value='') Select one...
+                    option(value='1') Option 1
+                    option(value='2') Option 2
+                    option(value='3') Option 3
+                    option(value='4') Option 4
+            .ch-form-row.ch-form-required.ch-form-disabled
+                label.required.disabled(for='select3')
+                    | Required disabled:
+                    em *
+                select#select3(required='required', disabled='disabled')
+                    option(value='') Select one...
+                    option(value='1') Option 1
+                    option(value='2') Option 2
+                    option(value='3') Option 3
+                    option(value='4') Option 4
+            .ch-form-row.ch-form-disabled
+                label(for='select4')
+                    | Disabled:
+                select#select4(disabled='disabled')
+                    option(value='0') Select one...
+                    option(value='1') Option 1
+                    option(value='2') Option 2
+                    option(value='3') Option 3
+                    option(value='4') Option 4
+        fieldset
+            legend Misc
+            .ch-form-row
+                label(for='street')
+                    | Domicilio:
+                input#street(type='text', size='30', placeholder='Av. Costanera Rafael Obligado')
+                input#door(type='number', placeholder='1345')
+                select#state
+                    option(value='') Select one state/province...
+                    option(value='1') Option 1
+                    option(value='2') Option 2
+                    option(value='3') Option 3
+                    option(value='4') Option 4
+            .ch-form-row.ch-form-row-inline
+                label(for='select5')
+                    | Common field:
+                select#select5
+                    option(value='0') Select one...
+                    option(value='1') Option 1
+                    option(value='2') Option 2
+                    option(value='3') Option 3
+                    option(value='4') Option 4
+                input#secondary_option(type='text', placeholder='Common field')
+            .ch-form-row.ch-form-row-inline
+                label(for='num1')
+                    | CUIT:
+                input#num1(type='number', placeholder='20', max='30', min='20')
+                | -
+                input#num2(type='number', placeholder='23111399', max='99999999', min='0')
+                | /
+                input#num3(type='number', placeholder='4', max='9', min='0')
+            .ch-form-row.ch-form-row-inline
+                label(for='tc1')
+                    | Expires:
+                input#tc1(type='number', min='1', max='12', placeholder='11')
+                input#tc2(type='number', min='2011', max='2020', placeholder='2013')
+            .ch-form-row
+                label(for='select6')
+                    | House features:
+                select#select6.ch-form-select-multiple(multiple='multiple', size='5')
+                    option(value='0') Air conditioning
+                    option(value='1') Rooms
+                    option(value='2') Balcony
+                    option(value='3') Laundry
+                    option(value='4') Kitchen
+                    option(value='5') Living
+                    option(value='6') Dining room
+                    option(value='7') Amenities
+        fieldset
+            .ch-list-options.ch-form-row.ch-form-required.required-check
+                input#check4a(type='checkbox', value='alpha', name='version4', required='required')
+                label(for='check4a')
+                    | Unique checkbox
+        fieldset
+            legend Checkbox
+            .ch-list-options.ch-form-required.required-option
+                h4.ch-form-subtitle
+                    | Label of checkboxs group:
+                    em *
+                ul
+                    li.ch-form-row
+                        input#check1a(type='checkbox', value='alpha', name='version1a', required='required')
+                        label(for='check1a')
+                            | Alpha
+                    li.ch-form-row
+                        input#check1b(type='checkbox', value='beta', name='version1b')
+                        label(for='check1b')
+                            | Beta
+        fieldset
+            legend
+                | Legend of required group
+                em *
+            .ch-list-options.ch-form-required.check2.required-option
+                ul
+                    li.ch-form-row
+                        input#check2a(type='checkbox', value='alpha', name='version2')
+                        label(for='check2a')
+                            | Alpha
+                    li.ch-form-row
+                        input#check2b(type='checkbox', value='beta', name='version2')
+                        label(for='check2b')
+                            | Beta
+        fieldset
+            legend Legend of checkboxs group
+            .ch-list-options.ch-form-required.check3.required-option
+                h4.ch-form-subtitle
+                    | Label of required group:
+                    em *
+                ul
+                    li.ch-form-row
+                        input#check3a(type='radio', value='alpha', name='version3')
+                        label(for='check3a')
+                            | Alpha
+                    li.ch-form-row
+                        input#check3b(type='radio', value='beta', name='version3')
+                        label(for='check3b')
+                            | Beta
+        fieldset
+            legend Radio buttons
+            .ch-list-options
+                ul
+                    li.ch-form-row
+                        input#radio1a(type='radio', value='alpha', name='version4')
+                        label(for='radio1a')
+                            | Alpha
+                    li.ch-form-row
+                        input#radio1b(type='radio', value='beta', name='version4')
+                        label(for='radio1b')
+                            | Beta
+        fieldset
+            legend
+                | Radio buttons required
+                em *
+            .ch-list-options.radio2.required-option
+                ul
+                    li.ch-form-row
+                        input#radio2a(type='radio', value='alpha', name='version5')
+                        label(for='radio2a')
+                            | Alpha
+                    li.ch-form-row
+                        input#radio2b(type='radio', value='beta', name='version5')
+                        label(for='radio2b')
+                            | Beta
+        fieldset
+            legend Legend of radio group
+            .ch-list-options.ch-form-required.radio3.required-option
+                h4.ch-form-subtitle
+                    | Radios required:
+                    em *
+                ul
+                    li.ch-form-row
+                        input#radio3a(type='radio', value='alpha', name='version6')
+                        label(for='radio3a')
+                            | Alpha
+                    li.ch-form-row
+                        input#radio3b(type='radio', value='beta', name='version6')
+                        label(for='radio3b')
+                            | Beta
+        fieldset
+            .ch-list-options.radio4
+                ul
+                    li.ch-form-row
+                        input#radio4a(type='radio', value='alpha', name='version7')
+                        label(for='radio4a')
+                            | Lorem ipsum dolor sit amet
+                    li.ch-form-row
+                        input#radio4b(type='radio', value='beta', name='version7')
+                        label(for='radio4b')
+                            | Beta
+        fieldset
+            legend Textarea
+            .ch-form-row
+                label(for='textarea1')
+                    | Textarea:
+                textarea#textarea1(cols='40', rows='4')
+            .ch-form-row.ch-form-required
+                label(for='textarea2')
+                    | Required:
+                    em *
+                textarea#textarea2(cols='40', rows='4', required='required')
+            .ch-form-row.ch-form-required.ch-form-disabled
+                label(for='textarea3')
+                    | Required disabled:
+                    em *
+                textarea#textarea3(cols='40', rows='4', required='required', disabled='disabled')
+            .ch-form-row.ch-form-disabled
+                label(for='textarea4')
+                    | Disabled:
+                textarea#textarea4(cols='40', rows='4', disabled='disabled')
+        .ch-form-actions
+            input.ch-btn(type='submit', name='_eventId_confirmation', value='Submit')
+            input.ch-btn.ch-btn-small(type='reset', value='Cancel')
+            a.resetForm(href='#') Reset validations
+    form.ch-form.ch-form-big(action='/src/assets/ajax.html')
+        fieldset
+            legend Big inputs
+            .ch-form-row
+                label(for='input_user') User:
+                input#input_user.ch-form-icon-input(type='text', name='input_user', size='50')
+                i.ch-form-icon-inner.ch-icon-user
+                .ch-validation-message Fill in this information.
+            .ch-form-row
+                label(for='input_pass') Password:
+                input#input_pass.ch-form-icon-input(type='password', name='input_pass', size='50')
+                i.ch-form-icon-inner.ch-icon-lock
+            .ch-form-actions
+                input.ch-btn(type='submit', name='confirmation', value='Login')
+                a(href='#') Cancel
+
+
 - script("get", '/src/js/canvas.min.js')
 - script("code", 'ch.onImagesLoads($("#ninja-img"), function () { $(this).fadeIn("fast"); $("canvas").fadeIn(1000); });')
+- script("get", '/src/js/components_init.js')

@@ -40,6 +40,12 @@ app.dynamicHelpers({
 /**
  * Routing
  */
+
+app.get('/chico.appcache', function (req, res) {
+    res.header('Content-Type', 'text/cache-manifest');
+    res.sendfile(__dirname + '/chico.appcache');
+});
+
 app.get('/', function (req, res) {
     res.render('index', meta);
 });

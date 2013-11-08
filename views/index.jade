@@ -139,8 +139,8 @@ h2 UI Components
         p This is a big warning message, be careful!
     .ch-box-icon
         i.ch-icon-info-sign
-        h2 Warning!
-        p This is a big warning message, be careful!
+        h2 Information
+        p Here's more information.
     .ch-box-icon.ch-box-error
         i.ch-icon-remove-sign
         | Oops, something wrong happened
@@ -793,6 +793,7 @@ h3#wizard.ch-box-container Wizard
                 label(for='input_ico')
                     | Icon:
                 input#input_ico(type='text', name='input_ico', size='30', placeholder='')
+                | &nbsp;
                 i.ch-form-icon.ch-icon-help-sign
             .ch-form-row
                 label(for='input_ico_inside')
@@ -803,6 +804,7 @@ h3#wizard.ch-box-container Wizard
                 label(for='input_button')
                     | Category:
                 input#input_button(type='text', name='input_button', size='30', placeholder='')
+                | &nbsp;
                 input.ch-btn.ch-btn-small.ch-btn-skin(type='button', name='add_category', value='Add')
                 span.ch-form-hint Add your category
             .ch-form-row.ch-form-required
@@ -906,7 +908,9 @@ h3#wizard.ch-box-container Wizard
                 label(for='street')
                     | Domicilio:
                 input#street(type='text', size='30', placeholder='Av. Costanera Rafael Obligado')
+                | &nbsp;
                 input#door(type='number', placeholder='1345')
+                | &nbsp;
                 select#state
                     option(value='') Select one state/province...
                     option(value='1') Option 1
@@ -922,19 +926,21 @@ h3#wizard.ch-box-container Wizard
                     option(value='2') Option 2
                     option(value='3') Option 3
                     option(value='4') Option 4
+                | &nbsp;
                 input#secondary_option(type='text', placeholder='Common field')
             .ch-form-row.ch-form-row-inline
                 label(for='num1')
                     | CUIT:
                 input#num1(type='number', placeholder='20', max='30', min='20')
-                | -
+                |  -&nbsp;
                 input#num2(type='number', placeholder='23111399', max='99999999', min='0')
-                | /
+                |  /&nbsp;
                 input#num3(type='number', placeholder='4', max='9', min='0')
             .ch-form-row.ch-form-row-inline
                 label(for='tc1')
                     | Expires:
                 input#tc1(type='number', min='1', max='12', placeholder='11')
+                | &nbsp;
                 input#tc2(type='number', min='2011', max='2020', placeholder='2013')
             .ch-form-row
                 label(for='select6')
@@ -1071,7 +1077,9 @@ h3#wizard.ch-box-container Wizard
                 textarea#textarea4(cols='40', rows='4', disabled='disabled')
         .ch-form-actions
             input.ch-btn(type='submit', name='_eventId_confirmation', value='Submit')
+            | &nbsp;
             input.ch-btn.ch-btn-small(type='reset', value='Cancel')
+            | &nbsp;
             a.resetForm(href='#') Reset validations
     form.ch-form.ch-form-big(action='/src/assets/ajax.html')
         fieldset
@@ -1080,13 +1088,13 @@ h3#wizard.ch-box-container Wizard
                 label(for='input_user') User:
                 input#input_user.ch-form-icon-input(type='text', name='input_user', size='50')
                 i.ch-form-icon-inner.ch-icon-user
-                .ch-validation-message Fill in this information.
             .ch-form-row
                 label(for='input_pass') Password:
                 input#input_pass.ch-form-icon-input(type='password', name='input_pass', size='50')
                 i.ch-form-icon-inner.ch-icon-lock
             .ch-form-actions
                 input.ch-btn(type='submit', name='confirmation', value='Login')
+                | &nbsp;
                 a(href='#') Cancel
 
 
